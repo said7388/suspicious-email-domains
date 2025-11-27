@@ -1,0 +1,31 @@
+name: Update Suspicious Domains
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-domains:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Merge domains
+        run: node merge_domains.js
+
+      - name: Commit the changes
+        run: |
+          git config --global user.name "Abu Said"
+          git config --global user.email "mdabusaidriyaz@gmail.com"
+          git add domains.txt domains.json domains.csv
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automatic generation" && git push)
