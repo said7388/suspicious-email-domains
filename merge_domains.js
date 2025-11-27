@@ -1,57 +1,69 @@
 const fs = require('fs');
 const https = require('https');
 
-const url1 =
-  'https://raw.githubusercontent.com/disposable-email-domains/disposable-email-domains/refs/heads/main/disposable_email_blocklist.conf';
-const url2 =
-  'https://disposable.github.io/disposable-email-domains/domains.txt';
+const sources = [
+  'https://raw.githubusercontent.com/disposable-email-domains/disposable-email-domains/refs/heads/main/disposable_email_blocklist.conf',
+  'https://disposable.github.io/disposable-email-domains/domains.txt',
+  'https://raw.githubusercontent.com/amieiro/disposable-email-domains/master/denyDomains.txt',
+  'https://raw.githubusercontent.com/kslr/disposable-email-domains/master/list.txt',
+];
 
-const url3 = 'https://raw.githubusercontent.com/amieiro/disposable-email-domains/master/denyDomains.txt';
+const fetchUrl = (url) =>
+  new Promise((resolve, reject) => {
+    const req = https.get(url, (res) => {
+      if (res.statusCode !== 200) {
+        return reject(
+          new Error(`Failed to fetch ${url} - Status: ${res.statusCode}`)
+        );
+      }
 
-const url4 = 'https://raw.githubusercontent.com/kslr/disposable-email-domains/master/list.txt'
-
-const fetchUrl = (url) => {
-  return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
       let data = '';
-      res.on('data', (chunk) => {
-        data += chunk;
-      });
-      res.on('end', () => {
-        resolve(data);
-      });
-      res.on('error', (err) => {
-        reject(err);
-      });
+      res.on('data', (chunk) => (data += chunk));
+      res.on('end', () => resolve(data));
+    });
+
+    req.on('error', reject);
+    req.setTimeout(10000, () => {
+      req.destroy();
+      reject(new Error(`Timeout fetching ${url}`));
     });
   });
+
+const normalizeList = (content) =>
+  content
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(
+      (line) =>
+        line &&
+        !line.startsWith('#') && // ignore comments
+        /^[a-zA-Z0-9.-]+$/.test(line) // basic domain validation
+    )
+    .map((domain) => domain.toLowerCase());
+
+const writeFileAtomic = (filename, data) => {
+  const temp = filename + '.tmp';
+  fs.writeFileSync(temp, data);
+  fs.renameSync(temp, filename);
 };
 
 const mergeDomains = async () => {
   try {
-    const [content1, content2, content3, content4] = await Promise.all([
-      fetchUrl(url1),
-      fetchUrl(url2),
-      fetchUrl(url3),
-      fetchUrl(url4),
-    ]);
+    const contents = await Promise.all(sources.map(fetchUrl));
 
-    const list1 = content1.split('\n').filter(Boolean);
-    const list2 = content2.split('\n').filter(Boolean);
-    const list3 = content3.split('\n').filter(Boolean);
-    const list4 = content4.split('\n').filter(Boolean);
+    const allDomains = contents.flatMap(normalizeList);
+    const uniqueSorted = [...new Set(allDomains)].sort();
 
-    const mergedSet = new Set([...list1, ...list2, ...list3, ...list4]);
-    const sortedDomains = Array.from(mergedSet).sort();
+    writeFileAtomic('domains.txt', uniqueSorted.join('\n'));
+    writeFileAtomic(
+      'domains.json',
+      JSON.stringify(uniqueSorted, null, 2)
+    );
+    writeFileAtomic('domains.csv', uniqueSorted.join(','));
 
-    // Write to different formats
-    fs.writeFileSync('domains.txt', sortedDomains.join('\n'));
-    fs.writeFileSync('domains.json', JSON.stringify(sortedDomains, null, 2));
-    fs.writeFileSync('domains.csv', sortedDomains.join(','));
-    
-    console.log(`Merged ${sortedDomains.length} domains.`);
+    console.log(`🔥 Done! Merged ${uniqueSorted.length} unique domains.`);
   } catch (error) {
-    console.error('Error merging domains:', error);
+    console.error('❌ Error merging domains:', error.message);
     process.exit(1);
   }
 };

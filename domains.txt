@@ -10717,13 +10717,6 @@
 9ziqmkpzz3aif.ml
 9ziqmkpzz3aif.tk
 9zjz7suyl.pl
-Disposableemailaddresses:emailmiser.com
-PutThisInYourSpamDatabase.com
-SendSpamHere.com
-SpamHereLots.com
-SpamHerePlease.com
-TempEMail.net
-Temporary-Mail.net
 a-1.site
 a-action.ru
 a-b.co.za
@@ -23137,7 +23130,6 @@ back.marksypark.com
 back.oldoutnewin.com
 back2barack.info
 back2bsback.com
-backToTopButton.style.display
 backalleybowling.info
 backalleydesigns.org
 backbone.works
@@ -23199,6 +23191,7 @@ backtobasicsbluegrass.com
 backtoliferecovery.org
 backtoschoolpbc.com
 backtothefuturefansclub.com
+backtotopbutton.style.display
 backtownmic.cf
 backtownmic.ga
 backtownmic.gq
@@ -33270,7 +33263,7 @@ buttloads.com
 buttluvr.com
 buttmonkey.com
 button.disabled
-button.innerHTML
+button.innerhtml
 buttonfans.com
 buttonrulesall.com
 buttwebcam.com
@@ -42987,8 +42980,6 @@ coprolite.com
 copticnn.net
 copventnfulezas.tk
 copy5.com
-copyBtn.innerHTML
-copyTitle.textContent
 copyandart.de
 copybtn.innerhtml
 copycashvalve.com
@@ -46403,7 +46394,6 @@ damncity.com
 damnser.co.pl
 damnsiya.com
 damnthespam.com
-damnthespam.com 
 damnun.cf
 damon.1amail.top
 damonacos.info
@@ -48548,7 +48538,6 @@ desaptoh07yey.gq
 desarrollo.online
 desarrolloexpo.com
 desarte.info
-desayuno-étnico.info
 descarga.gratis
 descargalo.org
 descargar-mp3.name
@@ -56617,7 +56606,7 @@ eleman34.com
 elemedialabs.com
 elememail.ru
 element.style.display
-element.textContent
+element.textcontent
 elementalstorm.com
 elementaltraderforex.com
 elementalwellnesscare.com
@@ -65971,7 +65960,6 @@ fotjb.anonbox.net
 fotmvpe26.host
 foto-contest.com
 foto-creativ.ru
-foto-en-el-álbum.info
 foto-oboi-rus.ru
 foto-videotrak.pl
 foto-znamenitostei31.ru
@@ -71943,7 +71931,6 @@ gmaul.com
 gmawfurbabies.com
 gmaxgxynss.ga
 gmayahoo.deil.com
-gmaıl.net
 gmblmania.club
 gmbni.com
 gmbrandunjha.com
@@ -85375,7 +85362,6 @@ inprisonwithisis.org
 inprisonwithisisbook.org
 inpsur.com
 inpursuitofyourcure.org
-inputRect.width
 inputrect.width
 inpwa.com
 inqling.org
@@ -85635,7 +85621,6 @@ instrutex.ru
 instyle.buzz
 instylerreviews.info
 instytutszkolen.pl
-instágram.com
 insubordinmail.ru
 insubsmail.com
 insuiter.com
@@ -95958,7 +95943,6 @@ kushriches.top
 kuskonmazciftligi.com
 kusma.org
 kusrc.com
-kusrc.com	
 kustermail.com
 kustomus.com
 kusyuvalari.com
@@ -100620,7 +100604,6 @@ loadedrarelib.site
 loadfree.site
 loadfreshstuff.site
 loadfreshtexts.site
-loadingRow.innerHTML
 loadingrow.innerhtml
 loadingsite.info
 loadingsite.online
@@ -100932,14 +100915,11 @@ login-moon.xyz
 login-online-co-uk.buzz
 login-to.online
 login.microsoft-office.live
-loginBtn.innerHTML
-loginButton.disabled
-loginButton.style.cursor
-loginButton.style.opacity
-loginRegisterBtn.style.display
-loginRegisterText.textContent
-loginText.textContent
 loginadulttoys.com
+loginbtn.innerhtml
+loginbutton.disabled
+loginbutton.style.cursor
+loginbutton.style.opacity
 logincbet.asia
 logindominoonline.com
 loginflow.com
@@ -100954,7 +100934,10 @@ loginjoker123.link
 loginlapp.com
 loginoff.su
 loginpage-documentneedtoupload.com
+loginregisterbtn.style.display
+loginregistertext.textcontent
 logins.page
+logintext.textcontent
 logintoemail.online
 loginz.net
 logismi227.ml
@@ -102858,7 +102841,6 @@ lzs1.us
 lzs94f5.pl
 lztoek.us
 lzw1o5.us
-lándwirt.com
 m-baraxolka.ru
 m-c-e.de
 m-chem.org
@@ -108819,8 +108801,8 @@ memail.biz.id
 memailme.co.uk
 memapp.com
 membed.xyz
-memberCenterDropdown.style.display
 memberblog.com
+membercenterdropdown.style.display
 memberdadu.com
 memberdds.org
 memberheality.ga
@@ -111831,14 +111813,14 @@ modafe.design
 modafinilrezeptfrei.space
 modaiptv.com
 modal-backdrop.show
-modal.dataset.showModal
-modalCurrencySymbol.textContent
-modalPriceDisplay.textContent
+modal.dataset.showmodal
+modalcurrencysymbol.textcontent
 modalova.biz
 modalova.online
 modalova.se
 modalova.shop
 modalova.xyz
+modalpricedisplay.textcontent
 modalsubstance.com
 modanaobuv.ru
 modaoguan.com
@@ -117679,7 +117661,6 @@ new.ovh
 new.pointbuysys.com
 new.viola.gq
 new688e.ga
-newPassword.length
 newa.wtf
 newaddr.com
 newage.press
@@ -117900,6 +117881,7 @@ neworderofthenorthandsouthmrcinc.com
 neworleansdaiquirifestival.com
 neworleansnewsdaily.com
 neworleansopiaterehab.com
+newpassword.length
 newpathsinmusic.org
 newpayee-registration-secured.com
 newpdfmanuales.xyz
@@ -122395,7 +122377,6 @@ oibo.xyz
 oicemail.com
 oiche.xyz
 oicweoman2020.com
-oid sha256:5c233440ae0689a4ed537f82391ca97014b0496da019c8853a24f015b87dc2ad
 oid.emlhub.com
 oida.icu
 oidemail.com
@@ -128698,8 +128679,8 @@ permail.online
 permail.site
 permail.store
 permalu.ru
-permanentTooltip.style.left
 permanentans.ru
+permanenttooltip.style.left
 permcourier.com
 permeamail.ru
 permispno.cf
@@ -130553,7 +130534,6 @@ plantchocolate.com
 plantcream.com
 planteralatt.nu
 planteralatt.se
-planteralätt.com
 plantfashion.com
 plantfeels.com
 plantfoodie.com
@@ -139583,7 +139563,6 @@ refef.site
 refeg.site
 refeh.site
 refei.site
-refeição.online
 refej.site
 refek.site
 refem.site
@@ -139655,9 +139634,6 @@ refr.site
 refractionphotos.net
 reframedlife.com
 refrangimail.ru
-refreshButton.disabled
-refreshButton.innerHTML
-refreshText.textContent
 refreshbutton.disabled
 refreshbutton.innerhtml
 refreshtext.textcontent
@@ -139763,17 +139739,17 @@ regiopost.trade
 regishub.com
 registand.site
 register-form.online
-registerBtn.innerHTML
-registerButton.disabled
-registerButton.style.cursor
-registerButton.style.opacity
-registerText.textContent
+registerbtn.innerhtml
+registerbutton.disabled
+registerbutton.style.cursor
+registerbutton.style.opacity
 registered.cf
 registered.com
 registermerpatislot88.live
 registermyninja.com
 registerrequest.com
 registersky777.club
+registertext.textcontent
 registgmbw.space
 registraciya-bank.ru
 registratuimei.org
@@ -140505,7 +140481,6 @@ reqaxv.com
 reqdocs.com
 reqt.net
 requanague.site
-requestBody.domain
 requestbody.domain
 requestmeds.com
 requestseven.online
@@ -140572,7 +140547,7 @@ reservepart.ir
 reservoirsource.com
 reset-secure.com
 reset123.com
-resetEmailDisplay.textContent
+resetemaildisplay.textcontent
 resetsecure.org
 resetsecurity.net
 resfe.com
@@ -147825,10 +147800,6 @@ send22u.info
 send360.de
 send4.uk
 send624.com
-sendCodeBtn.disabled
-sendCodeBtn.innerHTML
-sendCodeBtn.style.cursor
-sendCodeBtn.style.opacity
 sendaljepit.site
 sendangagung.online
 sendangduwur.tech
@@ -147837,6 +147808,10 @@ sendapp.uk
 sendbananas.website
 sendbulkmails.com
 sendcertifiedletters.com
+sendcodebtn.disabled
+sendcodebtn.innerhtml
+sendcodebtn.style.cursor
+sendcodebtn.style.opacity
 sendemail2.com
 senderelasem.tk
 sendermail.info
@@ -150929,7 +150904,6 @@ siyeu.com
 siyiel.icu
 siyonastudio.com
 sizableonline.info
-size 525872
 size.verywd.com
 sizeconvert.xyz
 sizemc.store
@@ -156709,10 +156683,10 @@ submargmail.com
 submergeus.com
 submic.com
 submissive.com
-submitBtn.disabled
-submitBtn.innerHTML
-submitBtn.style.cursor
-submitBtn.style.opacity
+submitbtn.disabled
+submitbtn.innerhtml
+submitbtn.style.cursor
+submitbtn.style.opacity
 submitprofit.com
 submoti.ga
 submoti.gq
@@ -158583,7 +158557,6 @@ szymonek.pl
 szz.spymail.one
 szzhcp.com
 szzlcx.com
-säkerhetsväst.se
 t-b-k.ru
 t-brand.online
 t-d-ural.ru
@@ -159545,7 +159518,6 @@ tarek-auth.com
 taresz.ga
 tarfand.city
 target35.ru
-targetStep.style.display
 targetachived.tk
 targetcom.com
 targetdb.com
@@ -159554,6 +159526,7 @@ targeting.space
 targetmapper.com
 targetmutual.com
 targetqq.live
+targetstep.style.display
 targettmail.com
 targoo3.site
 tariffenet.it
@@ -159786,7 +159759,6 @@ taxibmt.net
 taxififes.info
 taxilodka.ru
 taximone.ru
-taxinyköping.se
 taxisrilanka.co.uk
 taxivaeroportvnukovo.ru
 taxmail.online
@@ -162736,7 +162708,6 @@ thepiratebay.cloud
 thepiratebay.space
 thepiratefilmeshd.org
 thepiratesmc.online
-thepiratébay.org
 thepit.ml
 thepitujk79mgh.tk
 theplaidapron.com
@@ -169112,7 +169083,6 @@ tztu.emlpro.com
 tzxec.com
 tzymail.com
 tzzcw.info
-tś.xyz
 u-aroma.info
 u-cco.org
 u-o-b.ru
@@ -171885,7 +171855,6 @@ user.vivozap.com.br
 user015.1freehost.site
 user3p.v-tal.net.br
 user3p.vtal.net.br
-userLoginStatus.email
 userbot.p-e.kr
 userbot.site
 usercoupon.com
@@ -171894,6 +171863,7 @@ userfus.cf
 useriostligg-confirmed.com
 useriostligg-meet-backup.com
 useriostligg-meet.com
+userloginstatus.email
 usermania.online
 usermobinfonew.top
 usermobinfoupdate.com
@@ -173689,7 +173659,6 @@ versaupe.tk
 verseboard.com
 verseonecreative.com
 versinet.com
-version https://git-lfs.github.com/spec/v1
 versmesi.ga
 versmesi.gq
 versmesi.ml
@@ -179703,19 +179672,16 @@ windmine.tk
 windom.fun
 window-55.net
 window.adsbygoogle
-window.changeMailbox
 window.changemailbox
-window.currentLang
 window.currentlang
-window.dataLayer
 window.datalayer
-window.dispatchEvent
-window.isSubscribeTriggered
+window.dispatchevent
+window.issubscribetriggered
 window.location.href
 window.location.origin
 window.location.pathname
-window.memberEmail
-window.memberId
+window.memberemail
+window.memberid
 windowconfigurator.com
 windowglassrepairs.xyz
 windowoffice7.com
@@ -184086,7 +184052,6 @@ xogu.com
 xohi.site
 xoifyjcyj.shop
 xoixa.com
-xoixa.com	
 xoju.dropmail.me
 xojxe.com
 xok.dropmail.me
@@ -184676,7 +184641,6 @@ xxpm12pzxpom6p.gq
 xxpm12pzxpom6p.ml
 xxpm12pzxpom6p.tk
 xxqx3802.com
-xxqx3802.com	
 xxs.buzz
 xxshe.info
 xxsx.site
@@ -187589,7 +187553,6 @@ yzvy.com
 yzwmanbetx.com
 yzx12.com
 yzxvbp.com
-yêuniverse.net
 z-7mark.ru
 z-email.store
 z-fhspot.ga
