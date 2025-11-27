@@ -6,6 +6,10 @@ const url1 =
 const url2 =
   'https://disposable.github.io/disposable-email-domains/domains.txt';
 
+const url3 = 'https://raw.githubusercontent.com/amieiro/disposable-email-domains/master/denyDomains.txt';
+
+const url4 = 'https://raw.githubusercontent.com/kslr/disposable-email-domains/master/list.txt'
+
 const fetchUrl = (url) => {
   return new Promise((resolve, reject) => {
     https.get(url, (res) => {
@@ -25,15 +29,19 @@ const fetchUrl = (url) => {
 
 const mergeDomains = async () => {
   try {
-    const [content1, content2] = await Promise.all([
+    const [content1, content2, content3, content4] = await Promise.all([
       fetchUrl(url1),
       fetchUrl(url2),
+      fetchUrl(url3),
+      fetchUrl(url4),
     ]);
 
     const list1 = content1.split('\n').filter(Boolean);
     const list2 = content2.split('\n').filter(Boolean);
+    const list3 = content3.split('\n').filter(Boolean);
+    const list4 = content4.split('\n').filter(Boolean);
 
-    const mergedSet = new Set([...list1, ...list2]);
+    const mergedSet = new Set([...list1, ...list2, ...list3, ...list4]);
     const sortedDomains = Array.from(mergedSet).sort();
 
     // Write to different formats
