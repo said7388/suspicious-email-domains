@@ -17,7 +17,7 @@ You can fetch the list of domains directly from this repository and use it in yo
 Here's a simple JavaScript function to check if an email domain is in the suspicious list:
 
 ```javascript
-export const checkEmailDomain = async (email) => {
+export const isSuspiciousEmailDomain = async (email) => {
   try {
     const res = await fetch(
       "https://raw.githubusercontent.com/said7388/suspicious-email-domains/refs/heads/main/domains.txt",
@@ -48,7 +48,7 @@ Here's a simple Python function to check if an email domain is in the suspicious
 ```python
 import requests
 
-def check_email_domain(email):
+def is_suspicious_email_domain(email):
     try:
         response = requests.get("https://raw.githubusercontent.com/said7388/suspicious-email-domains/refs/heads/main/domains.txt")
         if response.status_code != 200:
@@ -73,7 +73,7 @@ import java.util.List;
 import java.util.Arrays;
 
 public class EmailChecker {
-    public static boolean checkEmailDomain(String email) {
+    public static boolean isSuspiciousEmailDomain(String email) {
         try {
             URL url = new URL("https://raw.githubusercontent.com/said7388/suspicious-email-domains/refs/heads/main/domains.txt");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -108,7 +108,7 @@ public class EmailChecker
 {
     private static readonly HttpClient client = new HttpClient();
 
-    public static async Task<bool> CheckEmailDomain(string email)
+    public static async Task<bool> IsSuspiciousEmailDomain(string email)
     {
         try
         {
@@ -135,7 +135,7 @@ public class EmailChecker
 Here's a simple PHP function to check if an email domain is in the suspicious list:
 
 ```php
-function checkEmailDomain($email) {
+function isSuspiciousEmailDomain($email) {
     try {
         $url = "https://raw.githubusercontent.com/said7388/suspicious-email-domains/refs/heads/main/domains.txt";
         $content = file_get_contents($url);
@@ -153,13 +153,13 @@ function checkEmailDomain($email) {
 
 ### How to Use
 
-1. Call the `checkEmailDomain` function with an email address.
+1. Call the `isSuspiciousEmailDomain` function with an email address.
 2. It returns `true` if the domain is suspicious, `false` otherwise.
 
 Example:
 
 ```javascript
-const isSuspicious = await checkEmailDomain("user@0-00.usa.cc");
+const isSuspicious = await isSuspiciousEmailDomain("user@0-00.usa.cc");
 console.log(isSuspicious); // true
 ```
 
