@@ -148593,6 +148593,7 @@ service-telecom.us
 service-xiaomi.ru
 service.anniversaryly.click
 service.carnivalday.click
+service.carolinensielkarte.click
 service.cd
 service.festivalday.click
 service.fetely.click
@@ -156244,6 +156245,7 @@ storective.co
 storeferragamo.com
 storegmail.com
 storegmail.net
+storegptone.email
 storehasina.shop
 storeillet.co
 storelivez.com
@@ -159315,7 +159317,6 @@ take-prizes-away13.life
 take-prizes-away14.life
 take-scroll.xyz
 take-ur-vites.org
-take.360ezzz.com
 take.blatnet.com
 take.dobunny.com
 take.geomenon.com
